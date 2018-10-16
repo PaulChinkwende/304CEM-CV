@@ -5,7 +5,7 @@ body { font: 16px Helvetica, Sans-Serif; line-height: 24px; background-color: iv
 /* do not allow non floating element to align with floating elements */
 .clear { clear: both; }
 /* set resume width and margin */
-#mainContent { width: 800px; margin: 40px auto 60px; }
+#mainContent { margin: 40px auto 60px; }
 /* main resume title margine and font style and also the line underneath */
 h1 { margin: 0 0 16px 0; padding: 0 0 16px 0; font-size: 42px; font-weight: bold; letter-spacing: -2px; border-bottom: 1px solid #999; }
 /* set main photo position and margin relative to the near contents */
@@ -13,7 +13,7 @@ h1 { margin: 0 0 16px 0; padding: 0 0 16px 0; font-size: 42px; font-weight: bold
 /* set paragraph defaul margin */
 p { margin: 0 0 16px 0; }
 /* set cover letter paragraph attributes */
-#coverLetter { width: 500px; float: left; }
+#coverLetter { float: left; }
 #coverLetter p { font-family: Georgia, Serif; font-style: italic; color: #666; }
 /*format h2 titles */
 h2 { font-size: 20px; margin: 0 0 6px 0; position: relative; }
