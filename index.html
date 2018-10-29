@@ -8,7 +8,10 @@
 	 
      <title>My Resume</title>
      <link rel="stylesheet" type="text/css" href="resume.css" /> 
-     <link rel="stylesheet" type="text/css" href="responsive_grid.css" />  
+     <link rel="stylesheet" type="text/css" href="responsive_grid.css" />
+     <link rel="stylesheet" type="text/css" href="form.css" />
+     <script src="js/validateForm.js"></script>
+
 
 </head>
 
@@ -92,6 +95,53 @@
                 </ul>
             </dd>
         </div>
+        <div class="container">
+            <form id="contact" action="" method="post" onsubmit="return validateForm()">
+                <h3>Quick Contact</h3>
+                <h4>Contact us today, and get reply with in 24 hours!</h4>
+                <fieldset>
+                <input placeholder="Your name" type="text" tabindex="1" required autofocus>
+                </fieldset>
+                <fieldset>
+                <input placeholder="Your Email Address" type="email" tabindex="2" required>
+                </fieldset>
+                <fieldset>
+                <input placeholder="Your Phone Number" type="tel" tabindex="3" required>
+                </fieldset>
+                <fieldset>
+                <input placeholder="Your Web Site starts with http://" type="url" tabindex="4
+                " required>
+                </fieldset>
+                <fieldset>
+                    <textarea placeholder="Type your Message Here...." tabindex="5" required></textarea>
+                </fieldset> 
+                <fieldset>
+
+                <button name="submit" type="submit" id="contact-submit" datasubmit="Sending">Submit</button>
+
+            </fieldset>
+            </form>
+        </div>  
+        <!-- Trigger/Open The Modal -->
+            <button id="myBtn">Open Modal</button>
+
+            <!-- The Modal -->
+            <div id="myModal" class="modal">
+
+            <!-- Modal content -->
+            <div class="modal-content">
+            <div class="modal-header">
+                <span class="close">&times;</span>
+                <h2>PC CV</h2>
+            </div>
+            <div class="modal-body">
+                <p>Some text in the Modal Body</p>
+                <p>BOOOOM...</p>
+            </div>
+            <div class="modal-footer">
+                <h3>Modal Footer</h3>
+            </div>
+</div>
         
     </div>
     
@@ -101,5 +151,31 @@
 </div>
 
 </body>
+        <script>// Get the modal
+        var modal = document.getElementById('myModal');
+
+        // Get the button that opens the modal
+        var btn = document.getElementById("myBtn");
+
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+
+        // When the user clicks the button, open the modal 
+        btn.onclick = function() {
+            modal.style.display = "block";
+        }
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function() {
+            modal.style.display = "none";
+        }
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+</script>      
 
 </html>
